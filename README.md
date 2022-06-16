@@ -7,5 +7,6 @@ Cover crops - Bill Gates the farmer
 <br>
 
 # Things to do
-[] - Vascular Plants
-[] - Peatlands
+[ ] - Vascular Plants
+<br>
+[ ] - Peatlands
