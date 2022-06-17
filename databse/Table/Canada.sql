@@ -30,5 +30,7 @@ CREATE TABLE TREE_CANADA (
        clade CHAR(50),	
        ticker CHAR(5),	/* Unique identifier */
        edible CHAR(1), /*Boolean - Y: YES and N:No */
+         iucn CHAR(2), /* Least concern (LC), Conservation Dependent (CD), Near Threatened (NT), Vulnerable (VU), Endangered (EN), Critically Endangered (CR), Extinct in the Wild (EW), 
+Extinct (EX) */
       PRIMARY KEY(ticker)
   )
