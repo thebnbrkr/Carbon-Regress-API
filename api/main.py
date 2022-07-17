@@ -1007,3 +1007,7 @@ def get_user():
         "iucn":"LC",
         "Species" :"P. emarginata"
     }
+
+@app.get("/get-item/{item_id}")
+def get_item(item_id:int):
+    return item_id*2
