@@ -1008,16 +1008,13 @@ def get_user():
         "Species" :"P. emarginata"
     }
 
-@app.get("/get-item/{item_id}")
-def get_item(item_id:int):
-    return item_id*2
-    
 @app.get("/ACPLT")
 def get_user():
     return {
         "Name"    :"Acer platanoides",
         "Eng_name":"Norway maple leaves",
         "dbh"     : "10-102",
+        # Volume eqn
         "eqn"     : "0.001011 × dbhcm^1.533 × htm^0.657" #dbhm - diameeter at breast height in cm. htm- tree height in meters
     }
 
@@ -1027,9 +1024,56 @@ def get_user():
         "Name"    :"Acer saccharinum",
         "Eng_name":"silver maple",
         "dbh"     : "13-125",
+        # Volume eqn
         "eqn"     : "0.0002383 × dbhcm^1.998 × htm^0.596" #dbhm - diameeter at breast height in cm. htm- tree height in meters
     }
 
+@app.get("/CL0LS")
+def get_user():
+    return {
+        "Name"    :"Celtis occidentalis",
+        "Eng_name":"Common hackberry",
+        "dbh"     : "11-119",
+        #Volume eqn
+        "eqn"     : "0.0022451 × dbhcm^2.118 × htm^ to 0.447" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/CRSLQ")
+def get_user():
+    return {
+        "Name"    :"Ceratonia siliqua",
+        "Eng_name":"carob",
+        "dbh"     : "16-74",
+        #Volume eqn
+        "eqn"     : "0.0001368 × dbhcm^1.79584 × htm^0.92667" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/CICRA")
+def get_user():
+    return {
+        "Name"    :"Cinnamomum camphora",
+        "Eng_name":"Camphor tree",
+        "dbh"     : "13-69",
+        "eqn"     : "0.0000807 × dbhcm^2.1348 × htm^0.63404" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/CPMCA")
+def get_user():
+    return {
+        "Name"    :"Cupressus macrocarpa",
+        "Eng_name":"Monterey cypress",
+        "dbh"     : "16-147",
+        "eqn"     : "0.0000419 × dbhcm^2.2604 × htm^0.6301" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/EUGLB")
+def get_user():
+    return {
+        "Name"    :"Eucalyptus globulus",
+        "Eng_name":"southern blue gum",
+        "dbh"     : "116-130",
+        "eqn"     : "0.0000318 × dbhcm^2.15182 × htm^0.83573" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
 
 @app.get("/get-item/{item_id}")
 def get_item(item_id:int):
@@ -1042,3 +1086,23 @@ def get_item(dbhcm:int, htm:int):
 @app.get("/ACSCM_eqn/{dbhcm}/{htm}")
 def get_item(dbhcm:int, htm:int):
     return 0.0002383*(dbhcm**1.998)*(htm**0.596)
+
+@app.get("/CLOLS_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0022451*(dbhcm**2.118)*(htm**0.447)
+
+@app.get("/CRSLQ_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0001368*(dbhcm**1.79584)*(htm**0.92667)
+
+@app.get("/CICRA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000807*(dbhcm**2.1348)*(htm**0.63404)
+
+@app.get("/CPMCA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000419*(dbhcm**2.2604)*(htm**0.6301)
+
+@app.get("/EUGLB_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000318*(dbhcm**2.15182)*(htm**0.83573)
