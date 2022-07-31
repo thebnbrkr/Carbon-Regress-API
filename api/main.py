@@ -1011,3 +1011,34 @@ def get_user():
 @app.get("/get-item/{item_id}")
 def get_item(item_id:int):
     return item_id*2
+    
+@app.get("/ACPLT")
+def get_user():
+    return {
+        "Name"    :"Acer platanoides",
+        "Eng_name":"Norway maple leaves",
+        "dbh"     : "10-102",
+        "eqn"     : "0.001011 × dbhcm^1.533 × htm^0.657" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/ACSCM")
+def get_user():
+    return {
+        "Name"    :"Acer saccharinum",
+        "Eng_name":"silver maple",
+        "dbh"     : "13-125",
+        "eqn"     : "0.0002383 × dbhcm^1.998 × htm^0.596" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+
+@app.get("/get-item/{item_id}")
+def get_item(item_id:int):
+    return item_id*2
+
+@app.get("/ACPLT_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.001011*(dbhcm**1.533)*(htm**0.657)
+
+@app.get("/ACSCM_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0002383*(dbhcm**1.998)*(htm**0.596)
