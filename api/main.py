@@ -1106,3 +1106,71 @@ def get_item(dbhcm:int, htm:int):
 @app.get("/EUGLB_eqn/{dbhcm}/{htm}")
 def get_item(dbhcm:int, htm:int):
     return 0.0000318*(dbhcm**2.15182)*(htm**0.83573)
+
+@app.get("/FXVLA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0004143*(dbhcm**1.847)*(htm**0.646)
+
+@app.get("/FXPVA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000385*(dbhcm**1.76296)*(htm**1.42782)
+
+@app.get("/GLTRS_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0004891*(dbhcm**2.132)*(htm**0.142)
+
+@app.get("/GMDCS_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.000463*(dbhcm**1.545)*(htm**0.792)
+
+@app.get("/JDMFA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000801*(dbhcm**2.18578)*(htm**0.548045)
+
+@app.get("/LQSFA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000631*(dbhcm**2.31582)*(htm**0.41571)
+
+@app.get("/MNGFL_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000504*(dbhcm**2.07041)*(htm**0.84563)
+
+@app.get("/PSRTA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000419*(dbhcm**2.226808)*(htm**0.668993)
+
+@app.get("/PSCHN_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000329*(dbhcm**2.19157)*(htm**0.9436)
+
+@app.get("/PLAFL_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000485*(dbhcm**2.43642)*(htm**0.39168)
+
+@app.get("/QRSIX_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000789*(dbhcm**1.82158)*(htm**1.06269)
+
+@app.get("/QRMCP_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0001689*(dbhcm**1.956)*(htm**0.842)
+
+@app.get("/TLCDA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0009453*(dbhcm**1.617)*(htm**0.59)
+
+@app.get("/USAMR_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0012*(dbhcm**1.696)*(htm**0.405)
+
+@app.get("/USPVA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000609*(dbhcm**2.32481)*(htm**0.49317)
+
+@app.get("/USPML_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.000338*(dbhcm**0.855)*(htm**2.041)
+
+@app.get("/ZKSTA_eqn/{dbhcm}/{htm}")
+def get_item(dbhcm:int, htm:int):
+    return 0.0000401*(dbhcm**2.36318)*(htm**0.5519)
