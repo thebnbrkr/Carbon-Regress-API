@@ -1074,6 +1074,160 @@ def get_user():
         "dbh"     : "116-130",
         "eqn"     : "0.0000318 × dbhcm^2.15182 × htm^0.83573" #dbhm - diameeter at breast height in cm. htm- tree height in meters
     }
+    
+
+@app.get("/FXPVA")
+def get_user():
+    return {
+        "Name"    :"Fraxinus pennsylvanica",
+        "Eng_name":"Green ash",
+        "dbh"     : "15-123",
+        "eqn"     : "0.0000385 × dbhcm^1.76296 × htm^1.42782" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/FXVLA")
+def get_user():
+    return {
+        "Name"    :"Fraxinus velutina",
+        "Eng_name":"Arizona ash",
+        "dbh"     : "15-85",
+        "eqn"     : "0.0004143 × dbhcm^1.847 × htm^0.646" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/GLTRS")
+def get_user():
+    return {
+        "Name"    :"Gleditsia triacanthos",
+        "Eng_name":"Honey locust",
+        "dbh"     : "9-98",
+        "eqn"     : "0.0004891 × dbhcm^2.132 × htm^0.142" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/GMDCS")
+def get_user():
+    return {
+        "Name"    :"Gymnocladus dioicus",
+        "Eng_name":"Kentucky coffeetree",
+        "dbh"     : "10-37",
+        "eqn"     : "0.000463 × dbhcm^1.545 × htmet^0.792" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/JDMFA")
+def get_user():
+    return {
+        "Name"    :"Jacaranda mimosifolia",
+        "Eng_name":"Jacaranda",
+        "dbh"     : "17-60",
+        "eqn"     : "0.0000801 × dbhcm^2.18578 × htm^0.548045" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/LQSFA")
+def get_user():
+    return {
+        "Name"    :"Liquidambar styraciflua",
+        "Eng_name":" American storax",
+        "dbh"     : "14-54",
+        "eqn"     : "0.0000631 × dbhcm^2.31582 × htm^0.41571" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/MNGFL")
+def get_user():
+    return {
+        "Name"    :"Magnolia grandiflora",
+        "Eng_name":"southern magnolia",
+        "dbh"     : "15-74",
+        "eqn"     : "0.0000504 × dbhcm^2.07041 × htm^0.84563" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/PSRTA")
+def get_user():
+    return {
+        "Name"    :"Pinus radiata",
+        "Eng_name":"Monterey pine",
+        "dbh"     : "17-105",
+        "eqn"     : "0.0000419 × dbhcm^2.226808 × htm^0.668993" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/PSCHN")
+def get_user():
+    return {
+        "Name"    :"Pistacia chinensis",
+        "Eng_name":"Chinese pistache",
+        "dbh"     : "13-51",
+        "eqn"     : "0.0000329 × dbhcm^2.19157 × htm^0.94367" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/PLAFL")
+def get_user():
+    return {
+        "Name"    :"Platanus × acerifolia",
+        "Eng_name":"London plane",
+        "dbh"     : "16-74",
+        "eqn"     : "0.0000485 × dbhcm^2.43642 × htm^0.39168" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/QRSIX")
+def get_user():
+    return {
+        "Name"    :"Quercus ilex",
+        "Eng_name":"Evergreen oak",
+        "dbh"     : "13-52",
+        "eqn"     : "0.0000789 × dbhcm^1.82158 × htm^1.06269" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/QRMCP")
+def get_user():
+    return {
+        "Name"    :"Quercus macrocarpa",
+        "Eng_name":"Burr oak",
+        "dbh"     : "11-100",
+        "eqn"     : "0.0001689 × dbhcm^1.956 × htm^0.842" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/TLCDA")
+def get_user():
+    return {
+        "Name"    :"Tilia cordata",
+        "Eng_name":"Small-leaved lime",
+        "dbh"     : "11-65",
+        "eqn"     : "0.0009453 × dbhcm^1.617 × htm^0.59" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/USAMR")
+def get_user():
+    return {
+        "Name"    :"Ulmus americana",
+        "Eng_name":"American elm",
+        "dbh"     : "18-114",
+        "eqn"     : "0.0012 × dbhcm^1.696 × htm^0.405" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/USPVA")
+def get_user():
+    return {
+        "Name"    :"Ulmus parvifolia",
+        "Eng_name":"Chinese elm",
+        "dbh"     : "17-56",
+        "eqn"     : "0.0000609 × dbhcm^2.32481 × htm^0.49317" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/USPML")
+def get_user():
+    return {
+        "Name"    :"Ulmus pumila",
+        "Eng_name":"Asiatic elm",
+        "dbh"     : "16-132",
+        "eqn"     : "0.000338 × dbhcm^0.855 × htm^2.041" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
+
+@app.get("/ZKSTA")
+def get_user():
+    return {
+        "Name"    :"Zelkova serrata",
+        "Eng_name":"Japanese elm",
+        "dbh"     : "15-86",
+        "eqn"     : "0.0000401 × dbhcm^2.36318 × htm^0.5519" #dbhm - diameeter at breast height in cm. htm- tree height in meters
+    }
 
 @app.get("/get-item/{item_id}")
 def get_item(item_id:int):
